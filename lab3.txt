@@ -66,8 +66,18 @@ Lab 3: Getting Started with SQL Queries\
 	priceusd numeric(10,2): 0.50, 1.00\
 \
 7)	//Code\
+	SELECT *\
+	FROM orders\
+	WHERE mon = \'91jan\'92 OR mon = \'91apr\'92;\
 \
 	//Result\
+	ordno integer: 1011, 1013, 1015, 1016, 1025\
+	mon character(3): jan, jan, jan, jan, apr\
+	cid character(4): c001, c002, c003, c006, c001\
+	aid character(3): a01, a03, a03, a01, a05\
+	pid character(3): p01, p03, p05, p01, p07\
+	qty integer: 1000, 1000, 1200, 1000, 800\
+	dollars numeric(12,2): 450.00, 880.00, 1104.00, 500.00, 720.00\
 \
 8)	//Code\
 \
