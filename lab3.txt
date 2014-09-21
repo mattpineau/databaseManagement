@@ -80,9 +80,23 @@ Lab 3: Getting Started with SQL Queries\
 	dollars numeric(12,2): 450.00, 880.00, 1104.00, 500.00, 720.00\
 \
 8)	//Code\
+	SELECT *\
+	FROM orders\
+	WHERE mon = \'91feb\'92 AND dollars > 200;\
 \
 	//Result\
+	ordno integer: 1017, 1018, 1020, 1021\
+	mon character(3): feb, feb, feb, feb\
+	cid character(4): c001, c001, c006, c004\
+	aid character(3): a06, a03, a03, a06\
+	pid character(3): p03, p04, p07, p01\
+	qty integer: 600, 600, 600, 1000\
+	dollars numeric(12,2): 540.00, 540.00, 600.00, 460.00\
 \
 9)	//Code\
-\
-	//Result}
+	SELECT ordno\
+	FROM orders\
+	WHERE cid = \'91c005\'92;\
+	\
+	//Result\
+	ordno integer:}
