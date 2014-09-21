@@ -46,12 +46,24 @@ Lab 3: Getting Started with SQL Queries\
 	city text: Duluth, Duluth\
 \
 5)	//Code\
-\
+	SELECT name\
+	FROM agents\
+	WHERE city != \'92New York\'92 AND city != \'91London\'92;\
+	\
 	//Result\
+	name text: Jones, Brown, Otasi, Smith	\
 \
 6)	//Code\
+	SELECT *\
+	FROM products\
+	WHERE city != \'91Dallas\'92 AND city != \'91Duluth\'92 AND priceusd <= 1;\
 \
 	//Result\
+	pid character: p02, p07\
+	name text: brush, case\
+	city text: Newark, Newark\
+	quantity integer: 203000, 100500\
+	priceusd numeric(10,2): 0.50, 1.00\
 \
 7)	//Code\
 \
