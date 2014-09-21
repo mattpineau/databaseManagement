@@ -16,4 +16,42 @@ Lab 3: Getting Started with SQL Queries\
 \
 	//Result\
 	name text: Bond\
-	city text: London}
+	city text: London\
+\
+2)	//Code\
+	SELECT pid, name, quantity\
+	FROM products\
+	WHERE priceusd>0.99;\
+\
+	//Result\
+	pid character(3): p03, p04, p05, p06, p07, p08\
+	name text: razor, pen, pencil, folder, case, clip\
+	quantity integer: 150600, 125300, 221400, 123100, 100500, 200600\
+\
+3)	//Code\
+\
+	//Result\
+\
+4)	//Code\
+\
+	//Result\
+\
+5)	//Code\
+\
+	//Result\
+\
+6)	//Code\
+\
+	//Result\
+\
+7)	//Code\
+\
+	//Result\
+\
+8)	//Code\
+\
+	//Result\
+\
+9)	//Code\
+\
+	//Result}
