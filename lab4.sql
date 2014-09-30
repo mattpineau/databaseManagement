@@ -35,4 +35,27 @@ select cid, name
 from customers
 where cid in (select cid
              from orders
-             where pid = ('p01', 'p07'));
+             where pid in ('p01', 'p07'));
+
+--5--
+select pid
+from products
+where pid in (select pid
+             from orders
+             where aid = 'a04');
+
+--6--
+select name, discount
+from customers
+where cid in (select cid
+             from orders
+             where aid in (select aid
+                          from agents
+                          where city in ('Dallas', 'Newark')));
+
+--7--
+select cid
+from customers
+where discount in (select discount
+                  from customers
+                  where city in ('Dallas', 'Kyoto'));
