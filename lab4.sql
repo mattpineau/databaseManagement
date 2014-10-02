@@ -30,12 +30,15 @@ where cid in (select cid
              from orders
              where aid != 'a04');
 
---4***********--
+--4--
 select cid, name
 from customers
 where cid in (select cid
              from orders
-             where pid in ('p01', 'p07'));
+             where pid = 'p07')
+  and cid in (select cid
+	      from orders
+	      where pid = 'p01');
 
 --5--
 select pid
