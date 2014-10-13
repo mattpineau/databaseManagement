@@ -14,7 +14,16 @@ and   orders.cid = customers.cid
 and   customers.name = 'Tiptop';
 
 --2***--
-
+select distinct orders2.pid
+from agents, 
+     customers, 
+     orders orders1, 
+     orders orders2
+where orders1.aid = agents.aid
+and orders2.aid=agents.aid
+and orders1.cid=customers.cid
+and customers.city = 'Kyoto'
+order by pid;
 
 --3--
 select name
@@ -46,6 +55,3 @@ from customers,
 where customers.city = agents.city;
 
 --7--
-
-
-
